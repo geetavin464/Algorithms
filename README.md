@@ -1,4 +1,6 @@
 programming_problems
 ====================
 
-Sovling Common Programming Problems in Ruby
+Solving Common Programming Problems in Ruby
+
+#1 Find the first unique element in an array
