@@ -11,5 +11,6 @@ l = str.length
      str
 end
 
-
 reverse_string("string1")
+
+# Efficiency: 
