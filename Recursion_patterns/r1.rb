@@ -2,9 +2,11 @@
 # Compare the efficiency of iterative solution vs recursive solution
 # Various Recursive Patterns
 # Recursion (Solve the Problem by finding solutions to simpler problems - Decrease & Conquer)
+
+
 # Mathematical Functions
 
-# Factorial (Recursive)
+# 1a. Factorial (Recursive)
 
 def factorial(n)
     case n
@@ -17,7 +19,7 @@ end
 
 factorial(5)
 
-# Factorial (Iterative)
+# 1b. Factorial (Iterative)
 
 def factorial(n)
    factorial = 1
@@ -30,7 +32,7 @@ end
 
 factorial(5)
 
-# GCD (Recursive)
+# 2a. GCD (Recursive)
 
 def gcd(a,b)
     if(a>b and a%b ==0)
@@ -42,13 +44,13 @@ end
 
 gcd(22,21)
 
-# GCD ( Iterative )
+# 2b. GCD ( Iterative )
 
 def gcd(a,b)
     
 end
 
-# Fibonacci (Recursive)
+# 3a. Fibonacci (Recursive)
 
 def fibonacci(n)
    case n
@@ -62,7 +64,8 @@ def fibonacci(n)
 end
 
 fibonacci(7)
-# Fibonacci (Iterative)
+
+# 3b. Fibonacci (Iterative)
 
 def fibonacci(n)
    fib_a = 0
@@ -78,3 +81,9 @@ def fibonacci(n)
 end
 
 fibonacci(7)
+
+
+# Recursion on Arrays/Lists
+
+# Search
+
