@@ -1,8 +1,8 @@
-# While Loop
-# Loop Condition, Body, Incr/Decr
-# For loops Take care of the incr/decr themselves
+# Common Iteration Patterns & the succint Ruby Versions
 
-# Counting Pattern: Counting the number of elements in an array or collection
+#------------------------------------------------------------------------------------------------#
+
+# 1a. Counting Pattern: Counting the number of elements in an array or collection
 
 def count(*arr)
    l = arr.length
@@ -15,7 +15,17 @@ end
 
 count(2,3,4,5)
 
-# Filter Counting Pattern: Counting the number of elements in an array that are even
+# 1b. Using Ruby
+
+def count(*arr)
+    arr.count
+end
+
+count(2,3,4,5)
+
+#------------------------------------------------------------------------------------------------#
+
+# 2a. Filter Counting Pattern: Counting the number of elements in an array that are even
 
 def count_even(*arr)
    l = arr.length
@@ -26,9 +36,19 @@ def count_even(*arr)
    return count
 end
 
-count(2,3,4,5)
+count_even(2,3,4,5)
 
-# Accumulate Pattern: 
+# 2b. Using Ruby
+
+def count_even(*arr)
+    arr.count {|a| a.even?}
+end
+
+count_even(2,3,4,5)
+
+#------------------------------------------------------------------------------------------------#
+
+# 3a. Accumulate Pattern: 
 
 def sum(*arr)
    l = arr.length
@@ -41,7 +61,17 @@ end
 
 sum(2,3,4,5)
 
-# Filtered Accumulate Pattern
+# 3b. Using Ruby
+
+def sum(*arr)
+    arr.inject {|sum, a| sum+a} #arr.reduce(:+)
+end
+
+sum(2,3,4,5)
+
+#------------------------------------------------------------------------------------------------#
+
+# 4a. Filtered Accumulate Pattern
 
 def sum_even(*arr)
     l = arr.length
@@ -54,7 +84,16 @@ end
 
 sum_even(2,3,4,5)
 
-# Search 
+# 4b. Using Ruby
+
+def sum_even(*arr)
+    arr.select{|a| a.even?}.reduce(:+)
+end
+
+sum_even(2,3,4,5)
+#------------------------------------------------------------------------------------------------#
+
+# 5a. Search 
 
 def search(elem, *arr)
    l = arr.length
@@ -68,7 +107,17 @@ end
 
 search(4, 2,3,4,5)
 
-# Filter 
+#5b. Using Ruby
+
+def search(elem, *arr)
+    arr.include?(elem)
+end
+
+search(4, 2,3,4,5)
+
+#------------------------------------------------------------------------------------------------#
+
+# 6a. Filter 
 
 def get_even(*arr)
     l = arr.length
@@ -81,8 +130,17 @@ end
 
 get_even(2,3,4,5)
 
+# 6b. Using Ruby
 
-# Extreme Pattern
+def get_even(*arr)
+    arr.select{|a| a.even?}
+end
+
+get_even(2,3,4,5)
+
+#------------------------------------------------------------------------------------------------#
+
+# 7a. Extreme Pattern
 
 def largest(*arr)
     l = arr.length
@@ -95,7 +153,16 @@ end
 
 largest(2,3,4,5)
 
-# Extreme Index
+# 7b. Using Ruby
+
+def largest(*arr)
+    arr.max 
+end
+
+largest(2,3,4,5)
+#------------------------------------------------------------------------------------------------#
+
+# 8a. Extreme Index
 
 def index_largest(*arr)
    l = arr.length
@@ -108,7 +175,16 @@ end
 
 index_largest(2,3,4,5)
 
-# Map 
+# 8b. Using Ruby
+
+def index_largest(*arr)
+    arr.index(arr.max)
+end
+
+index_largest(2,3,4,5)
+#------------------------------------------------------------------------------------------------#
+
+# 9a. Map 
 
 def decr_by_1(*arr)
    l = arr.length
@@ -121,5 +197,18 @@ end
 
 decr_by_1(2,3,4,5)
 
+# 9b. Using Ruby
+
+def decr_by_1(*arr)
+    arr.map{|a| a-1 }
+end
+
+decr_by_1(2,3,4,5)
+#------------------------------------------------------------------------------------------------#
+
 # Merge
+
+#------------------------------------------------------------------------------------------------#
+
+# For Loop takes care of the incr/decr itself
 
