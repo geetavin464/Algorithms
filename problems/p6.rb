@@ -25,7 +25,7 @@ def cap(str)
 end
 
 cap("helloanyonethere")
-cap("hetheone")
-cap("hetheany")
-cap("heantheone")
+# cap("hetheone")
+# cap("hetheany")
+# cap("heantheone")
     
