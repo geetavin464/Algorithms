@@ -1,7 +1,7 @@
-programming_problems
-====================
+Algorithms
+==========
 
-Solving Common Programming Problems in Ruby
+Implementation of Algorithms in Ruby
 
 
 
