@@ -1,6 +1,6 @@
 Practice.md
 
- ######Simple practice problems to brush up your programming. Also useful when learning the syntax of a new language
+ *Simple practice problems to brush up your programming. Also useful when learning the syntax of a new language*
 
 **Easy**
 * Print all the elements of an array
