@@ -49,3 +49,6 @@ Practice.md
 * https://en.wikipedia.org/wiki/Longest_common_substring_problem
 * https://en.wikipedia.org/wiki/Longest_palindromic_substring
 * https://en.wikipedia.org/wiki/Longest_common_subsequence_problem
+
+**Resources**
+* http://en.wikibooks.org/wiki/Algorithm_Implementation
