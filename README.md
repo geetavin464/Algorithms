@@ -15,8 +15,7 @@ Practice.md
 * Reverse an array
 * Check if an array is a palindrome
 * Find the largest element in an array
-* Find the index of the largest ele
-ment in an array
+* Find the index of the largest element in an array
 
 **Sort**
 * Sort an array
