@@ -15,8 +15,8 @@ def insertion_sort(*arr)
             end
         end
     end
-    arr
+    arr.inspect
     
 end
 
-insertion_sort(4,5,6,3,2,8,1,5)
+puts insertion_sort(4,5,6,3,2,8,1,5)

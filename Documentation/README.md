@@ -54,3 +54,16 @@ Practice.md
 **Resources**
 * http://en.wikibooks.org/wiki/Algorithm_Implementation
 * https://github.com/sagivo/algorithms
+
+* `return` vs `break`
+  * `return` is when you have the solution
+  * `break` is when you know your solution is not in this iteration, so you want to continue with the next iteration
+
+* Traversals
+  * Outer Loop vs Inner Loop
+  * Outer loop - The outer loop index is stationed at each variable, while the inner loop index traverses the array
+
+* Traversal - 2
+  * You might need to traverse the entire length
+  * Sometimes you only traverse half the length ( for reversal problems )
+  * 
